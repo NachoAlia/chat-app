@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :rooms
   devise_for :users
-  get 'posts', to: 'posts#index'
   
-  root "posts#index"
+  
+  root "rooms#index"
 end
